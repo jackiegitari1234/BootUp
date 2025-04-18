@@ -12,9 +12,9 @@ body {
   align-items: center;
   justify-content: center; 
   font-family: "Lato", sans-serif;
+  line-height: 30px;
+  text-decoration: wavy;
   margin: 0;
-  /* height: 100vh; */
-  /* overflow:visible;  */
 }
 
 .text {
@@ -56,7 +56,6 @@ body {
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
   z-index: 100;
-  height: 100vh;
 }
 
 .nav.visible {
@@ -66,8 +65,8 @@ body {
 .nav-black {
   background-color: #3a9494;
   width: 60%;
-  max-width: 250px;
-  min-width: 200px;
+  max-width: 400px;
+  min-width: 350px;
   transition-delay: 0.4s ;
 }
 
@@ -120,6 +119,13 @@ body {
   text-transform: capitalize;
 }
 
+.nav .list {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .nav .list li a:hover{
   text-decoration: underline;
 }
@@ -163,7 +169,7 @@ button {
     padding: 15px;
     margin: 0 auto;
     max-width: 100%;
-    width: 800px;
+    width: 70%;
 
 }
 
