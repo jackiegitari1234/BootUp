@@ -1,24 +1,16 @@
 import React from "react";
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-  crossorigin="anonymous"
-/>;
 
 function Content() {
   return (
     <div>
-      <div class="main-content">
+      <div className="main-content">
         <header>
-          <button class="nav-btn open-btn">
-            <i class="fas fa-bars"></i>
-          </button>
+          <button className="nav-btn open-btn"></button>
         </header>
 
-        <div class="container">
+        <div className="container">
           <p>
-            ~ In the world of Java development, Spring Boot is a game-changer.
+            ~ Inn the world of Java development, Spring Boot is a game-changer.
           </p>
           <p>
             ~ It takes the powerful features of the Spring Framework and wraps

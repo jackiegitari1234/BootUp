@@ -1,21 +1,18 @@
 import Content from "./components/Content";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
 import NavBar from "./components/NavBar";
+// import useScript from "hooks/useScript";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <NavBar></NavBar>
+      <NavBar />
       <main className="py-3">
         <Content />
         <Footer />
         <script src="script.js"></script>
 
-        {/* <Container>
-          <Outlet />
-        </Container> */}
+        {}
       </main>
     </>
   );
