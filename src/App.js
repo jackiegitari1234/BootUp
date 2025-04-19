@@ -1,6 +1,7 @@
 import Content from "./components/Content";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
+
 // import useScript from "hooks/useScript";
 
 const App = () => {
