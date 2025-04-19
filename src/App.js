@@ -1,4 +1,5 @@
 import Content from "./components/Content";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 
@@ -7,9 +8,9 @@ const App = () => {
     <>
       <Header />
       <NavBar></NavBar>
-      <Content />
       <main className="py-3">
-        <h1>Welcome</h1>
+        <Content />
+        <Footer />
         <script src="script.js"></script>
 
         {/* <Container>
