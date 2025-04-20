@@ -17,15 +17,17 @@ function NavBar() {
       )}
 
       <div className={`nav nav-black ${visible ? "visible" : ""}`}>
-        <div className={`nav nav-red ${visible ? "visible" : ""}`}>
-          <div className={`nav nav-white ${visible ? "visible" : ""}`}>
-            <button
-              className="nav-btn close-btn"
-              onClick={() => setVisible(false)}
-            >
-              <i className="fas fa-times"></i>
-            </button>
+        <div className={`nav nav-white  ${visible ? "visible" : ""}`}>
+          <button
+            className="nav-btn close-btn"
+            onClick={() => setVisible(false)}
+          >
+            <i className="fas fa-times"></i>
+          </button>
+          <div>
             <img src={logo} alt="BootUp" width={45} height={50} />
+          </div>
+          <div>
             <ul className="list">
               Intro
               <li>

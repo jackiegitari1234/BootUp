@@ -1,29 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
 :root {
-  --primary-color: #b7e2e2;
+  --primary-color: #3a9494;
   --secondary-color: #7fe2e2;
   --other-color: #3a9494;
 }
 main {
-  /* min-height: 80vh; */
   background-color: black;
 }
 * {
   box-sizing: border-box;
-  /* outline: 1px solid red; */
 }
 body {
-  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("assets/boot.png"); */
   align-items: center;
   justify-content: center;
   font-family: "Lato", sans-serif;
   line-height: 30px;
   text-decoration: wavy;
   margin: 0;
-  /* background-image: url("assets/boot.png"); */
-  /* opacity: 0.8; */
   background-size: cover;
   background-color: black;
   width: 100%;
@@ -62,7 +56,6 @@ h2 {
 
 .nav-btn {
   border: none;
-  /* background-color: transparent; */
   cursor: pointer;
   font-size: 20px;
 }
@@ -85,10 +78,11 @@ h2 {
 
 .nav.visible {
   transform: translateX(0);
+  padding-left: 10px;
 }
 
 .nav-black {
-  background-color: #3a9494;
+  background-color: var(--primary-color);
   width: 60%;
   max-width: 410px;
   min-width: 400px;
@@ -97,15 +91,6 @@ h2 {
 
 .nav-black.visible {
   transition-delay: 0s;
-}
-
-.nav-red {
-  background-color: var(--secondary-color);
-  transition-delay: 0.2s;
-}
-
-.nav-red.visible {
-  transition-delay: 0.2s;
 }
 
 .nav-white {
@@ -219,19 +204,18 @@ button {
   align-items: center;
 }
 .cardItems {
-  /* flex: 1 1 100%; */
   padding: 20px;
-  margin: 5px;
-
+  margin: 10px;
   background: rgb(17, 17, 17);
   border-radius: 12px;
-  box-shadow: 20 20px 80px rgba(156, 42, 42, 0.1);
-  /* margin-bottom: 50px; */
+  box-shadow: 0 0 5px var(--secondary-color);
   color: aliceblue;
   font-size: 17px;
 }
+.cardItems:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
 .image1 {
-  /* width: 150px;
-  height: 80px; */
   transform: skewY(-10deg);
 }
