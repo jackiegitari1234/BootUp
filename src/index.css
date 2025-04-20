@@ -5,18 +5,40 @@
   --secondary-color: #7fe2e2;
   --other-color: #3a9494;
 }
+main {
+  /* min-height: 80vh; */
+  background-color: black;
+}
 * {
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 body {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("assets/boot.png"); */
   align-items: center;
   justify-content: center;
   font-family: "Lato", sans-serif;
   line-height: 30px;
   text-decoration: wavy;
   margin: 0;
-  background-image: url("assets/chatimg.png");
+  /* background-image: url("assets/boot.png"); */
+  /* opacity: 0.8; */
   background-size: cover;
+  background-color: black;
+  width: 100%;
+}
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+.intro {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  color: white;
 }
 
 .text {
@@ -40,7 +62,7 @@ body {
 
 .nav-btn {
   border: none;
-  background-color: transparent;
+  /* background-color: transparent; */
   cursor: pointer;
   font-size: 20px;
 }
@@ -143,8 +165,7 @@ body {
 }
 
 header {
-  background-color: #3a9494;
-  color: black;
+  color: white;
   font-size: 130%;
   position: relative;
   padding: 13px 15px;
@@ -158,12 +179,7 @@ header {
 
 header h1 {
   margin: 0;
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+  color: white;
 }
 
 p {
@@ -190,13 +206,6 @@ button {
   padding: 8px 12px;
 }
 
-.container {
-  padding: 15px;
-  margin: 0 auto;
-  max-width: 100%;
-  width: 70%;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -206,16 +215,23 @@ button {
   background-color: rgba(0, 0, 0, 0.5); /* semi-transparent */
 }
 
-/* .card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-} */
-.card {
+.card-grid {
+  align-items: center;
+}
+.cardItems {
   /* flex: 1 1 100%; */
   padding: 20px;
-  background: white;
+  margin: 5px;
+
+  background: rgb(17, 17, 17);
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 50px;
+  box-shadow: 20 20px 80px rgba(156, 42, 42, 0.1);
+  /* margin-bottom: 50px; */
+  color: aliceblue;
+  font-size: 17px;
+}
+.image1 {
+  /* width: 150px;
+  height: 80px; */
+  transform: skewY(-10deg);
 }

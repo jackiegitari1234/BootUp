@@ -10,7 +10,6 @@ function NavBar() {
         <button className="nav-btn open-btn" onClick={() => setVisible(true)}>
           <i className="fas fa-bars"></i>
         </button>
-        <h3>SpringBoot Intro</h3>
       </header>
 
       {visible && (

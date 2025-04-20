@@ -1,17 +1,14 @@
-import { Col, Row, Container } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
+import springboot from "../assets/boot.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer>
-      <Container>
-        <Row>
-          <Col className="text-center py-3">
-            <p className="text-center py-3">bootUp &copy; {currentYear}</p>
-          </Col>
-        </Row>
-      </Container>
-    </footer>
+    <Row>
+      <Col className="text-center ">
+        <p className="text-center ">bootUp &copy; {currentYear}</p>
+      </Col>
+    </Row>
   );
 };
 
