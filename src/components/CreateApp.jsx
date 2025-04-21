@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 function CreateApp() {
   return (
@@ -22,7 +22,7 @@ function CreateApp() {
       </Row>
 
       <Row className="justify-content-center mb-5 mt-3">
-        <Col xs="11" md="5">
+        <Col xs="11" md="11" xl="5">
           <div className="cardItems">
             <p className="text-center"> Windows </p>
             <br />
@@ -85,7 +85,7 @@ function CreateApp() {
           </div>
         </Col>
 
-        <Col xs="11" md="6">
+        <Col xs="11" md="11" xl="5">
           <div className="cardItems">
             <p className="text-center"> macOS </p>
             <ol>
