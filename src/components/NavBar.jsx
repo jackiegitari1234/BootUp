@@ -31,11 +31,10 @@ function NavBar() {
           <div>
             <ul className="list">
               Creating an Application
-              <Link className="btn btn-light my-3" to="/app">
-                Simple Spring Boot Application{" "}
-              </Link>
               <li>
-                <a href="#">Simple Spring Boot Application</a>
+                <Link to="/app" onClick={() => setVisible(false)}>
+                  Installing The Prerequisites
+                </Link>
               </li>
               <li>
                 <a href="#">Maven</a>

@@ -28,6 +28,12 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
 .intro {
   font-size: 20px;
   text-align: center;
@@ -58,6 +64,14 @@ h2 {
   border: none;
   cursor: pointer;
   font-size: 20px;
+}
+
+.list-link {
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: var(--secondary-color);
+  color: black !important;
 }
 
 .open-btn {
@@ -122,6 +136,13 @@ h2 {
 }
 
 .nav .list li a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.nav .list Link {
   color: black;
   font-size: 14px;
   text-decoration: none;
@@ -219,4 +240,15 @@ button {
 }
 .image1 {
   transform: skewY(-10deg);
+}
+
+pre code {
+  background-color: #1e1e1e; /* Dark gray background */
+  color: #d4d4d4; /* Light gray text */
+  padding: 1em;
+  border-radius: 8px;
+  display: block;
+  overflow-x: auto;
+  font-family: "Courier New", monospace;
+  font-size: 0.95rem;
 }
