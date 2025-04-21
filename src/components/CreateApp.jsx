@@ -22,7 +22,7 @@ function CreateApp() {
       </Row>
 
       <Row className="justify-content-center mb-5 mt-3">
-        <Col xs="8" md="5">
+        <Col xs="11" md="5">
           <div className="cardItems">
             <p className="text-center"> Windows </p>
             <br />
@@ -85,7 +85,7 @@ function CreateApp() {
           </div>
         </Col>
 
-        <Col xs="8" md="6">
+        <Col xs="11" md="6">
           <div className="cardItems">
             <p className="text-center"> macOS </p>
             <ol>
@@ -141,7 +141,7 @@ function CreateApp() {
       </Row>
 
       <Row className="justify-content-left">
-        <Col xs="8" md="4" className="">
+        <Col xs="11" md="4" className="">
           <h3> 2. Maven </h3>
         </Col>
       </Row>
