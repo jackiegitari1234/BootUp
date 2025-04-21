@@ -21,7 +21,7 @@ function CreateApp() {
         </Col>
       </Row>
 
-      <Row className="justify-content-center mb-5">
+      <Row className="justify-content-center mb-5 mt-3">
         <Col xs="8" md="5">
           <div className="cardItems">
             <p className="text-center"> Windows </p>

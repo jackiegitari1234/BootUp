@@ -2,9 +2,7 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 
-const Content = () => {
-  console.log("Environment:", process.env.NODE_ENV);
-
+function Content() {
   return (
     <>
       <Container>
@@ -118,6 +116,6 @@ const Content = () => {
       </Row>
     </>
   );
-};
+}
 
 export default Content;
