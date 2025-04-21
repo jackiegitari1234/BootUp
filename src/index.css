@@ -206,6 +206,7 @@ button {
 .cardItems {
   padding: 20px;
   margin: 10px;
+  margin-bottom: 40px;
   background: rgb(17, 17, 17);
   border-radius: 12px;
   box-shadow: 0 0 5px var(--secondary-color);
