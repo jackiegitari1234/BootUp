@@ -31,7 +31,7 @@ function NavBar() {
           <div>
             <ul className="list">
               Creating an Application
-              <Link className="btn btn-light my-3" to="/">
+              <Link className="btn btn-light my-3" to="/app">
                 Simple Spring Boot Application{" "}
               </Link>
               <li>
