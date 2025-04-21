@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import logo from "../assets/logo.png";
+import logo from "../assets/123.png";
 import { Link } from "react-router-dom";
 
 function NavBar() {
@@ -25,9 +25,9 @@ function NavBar() {
           >
             <i className="fas fa-times"></i>
           </button>
-          <div>
-            <img src={logo} alt="BootUp" width={45} height={50} />
-          </div>
+
+          <img src={logo} alt="BootUp" width={250} height={100} />
+
           <div>
             <ul className="list">
               Creating an Application
