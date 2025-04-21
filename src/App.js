@@ -1,16 +1,14 @@
-import Content from "./components/Content";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
     <>
       <NavBar />
       <main className="py-3">
-        <Content />
+        <Outlet />
         <Footer />
-        <script src="script.js"></script>
-
         {}
       </main>
     </>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [visible, setVisible] = useState(false);
@@ -29,20 +30,10 @@ function NavBar() {
           </div>
           <div>
             <ul className="list">
-              Intro
-              <li>
-                <a href="#">What is Spring Boot?</a>
-              </li>
-              <li>
-                <a href="#">Spring Boot Features</a>
-              </li>
-              <li>
-                <a href="#">Setting Up the Environment - IntelliJ</a>
-              </li>
-            </ul>
-            <br />
-            <ul className="list">
               Creating an Application
+              <Link className="btn btn-light my-3" to="/">
+                Simple Spring Boot Application{" "}
+              </Link>
               <li>
                 <a href="#">Simple Spring Boot Application</a>
               </li>

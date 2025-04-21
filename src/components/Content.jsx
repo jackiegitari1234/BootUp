@@ -2,7 +2,9 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 
-function Content() {
+const Content = () => {
+  console.log("Environment:", process.env.NODE_ENV);
+
   return (
     <>
       <Container>
@@ -60,7 +62,7 @@ function Content() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
               fill="currentColor"
-              class="size-4"
+              className="size-4"
               width="100"
               height="100"
             >
@@ -91,7 +93,7 @@ function Content() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
               fill="currentColor"
-              class="size-4"
+              className="size-4"
               width="100"
               height="100"
             >
@@ -116,6 +118,6 @@ function Content() {
       </Row>
     </>
   );
-}
+};
 
 export default Content;
