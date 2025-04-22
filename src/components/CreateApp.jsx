@@ -116,43 +116,46 @@ function CreateApp() {
                   <code>
                     source ~/.zshrc <br /> java -version
                   </code>{" "}
+                  <br />
                 </pre>
               </li>
             </ol>
           </div>
-
           <div className="cardItems">
-            Linux
-            <br />
-            <ol>
-              <li>
-                Run:
-                <pre>
-                  <code>
-                    sudo apt update <br />
-                    sudo apt install openjdk-17-jdk
-                  </code>
-                </pre>
-              </li>
-              <li>
-                Then:
-                <pre>
-                  <code>java -version</code>
-                </pre>
-              </li>
-            </ol>
+            <div className="mb-4">
+              Linux
+              <br />
+              <ol>
+                <li>
+                  Run:
+                  <pre>
+                    <code>
+                      sudo apt update <br />
+                      sudo apt install openjdk-17-jdk
+                    </code>
+                  </pre>
+                </li>
+                <li>
+                  Then:
+                  <pre>
+                    <code>java -version</code>
+                  </pre>
+                </li>
+              </ol>
+            </div>
           </div>
         </Col>
       </Row>
 
-      <Row className="justify-content-left mt-5">
+      <Row className="justify-content-left mt-5 ">
+        <hr />
         <Col xs="11" md="4" className="mt-5">
           <h3> 2. Maven </h3>
         </Col>
       </Row>
       <Row className="justify-content-center   ">
         <Col xs="11" md="11" xl="5">
-          <div className=" p-5">
+          <div className=" ">
             <p className="text-center"> Windows </p>
             <br />
             <ol>
@@ -242,8 +245,8 @@ function CreateApp() {
         </Col>
       </Row>
 
-      <Row className="justify-content-center mb-5 ">
-        <Col xs="11" md="11" className="mt-5 mb-5 cardItems2">
+      <Row className="justify-content-center m-5 cardItems2">
+        <Col xs="11" md="11" className="mt-5 mb-5 ">
           <h3> 3. IntelliJ </h3>
 
           <Col xs="11" md="11" xl="11">

@@ -239,9 +239,9 @@ button {
   padding: 20px;
   /* margin: 10px; */
   margin-left: 40px;
-  background: rgb(17, 17, 17);
+  background: black;
   border-radius: 12px;
-  /* box-shadow: 0 0 1px #7fe2e2; */
+  box-shadow: 5px 5px 5px 5px rgb(51, 51, 51);
   color: aliceblue;
   font-size: 17px;
 }
