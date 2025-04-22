@@ -251,10 +251,10 @@ function CreateApp() {
             <h3> 3. IntelliJ </h3>
           </Col>
         </Row>
-        <Row className="justify-content-left m-5 ">
-          <Col xs="11" md="11" className=" mb-5 ">
+        <Row className="justify-content-left mb-5 ml-5 ">
+          <Col xs="11" md="11" className="">
             <Col xs="11" md="11" xl="11">
-              <div className=" p-5">
+              <div className=" ">
                 <ul>
                   <li>
                     {" "}
