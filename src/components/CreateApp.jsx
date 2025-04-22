@@ -245,27 +245,32 @@ function CreateApp() {
         </Col>
       </Row>
 
-      <Row className="justify-content-center m-5 cardItems2">
-        <Col xs="11" md="11" className="mt-5 mb-5 ">
-          <h3> 3. IntelliJ </h3>
-
-          <Col xs="11" md="11" xl="11">
-            <div className=" p-5">
-              <ul>
-                <li>
-                  {" "}
-                  IntelliJ IDEA is a good IDE for Java Development, however, you
-                  can use any other IDE of your choice <br />{" "}
-                </li>
-                <li>
-                  Download and install IntelliJ IDEA from
-                  <Link></Link>
-                </li>
-              </ul>
-            </div>
+      <div className="cardItems2">
+        <Row className="justify-content-left ">
+          <Col xs="11" md="4" className="">
+            <h3> 3. IntelliJ </h3>
           </Col>
-        </Col>
-      </Row>
+        </Row>
+        <Row className="justify-content-left m-5 ">
+          <Col xs="11" md="11" className=" mb-5 ">
+            <Col xs="11" md="11" xl="11">
+              <div className=" p-5">
+                <ul>
+                  <li>
+                    {" "}
+                    IntelliJ IDEA is a good IDE for Java Development, however,
+                    you can use any other IDE of your choice <br />{" "}
+                  </li>
+                  <li>
+                    Download and install IntelliJ IDEA from
+                    <Link></Link>
+                  </li>
+                </ul>
+              </div>
+            </Col>
+          </Col>
+        </Row>
+      </div>
     </>
   );
 }
