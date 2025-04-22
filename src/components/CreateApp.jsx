@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function CreateApp() {
   return (
@@ -144,9 +145,122 @@ function CreateApp() {
         </Col>
       </Row>
 
-      <Row className="justify-content-left">
-        <Col xs="11" md="4" className="">
+      <Row className="justify-content-left mt-5">
+        <Col xs="11" md="4" className="mt-5">
           <h3> 2. Maven </h3>
+        </Col>
+      </Row>
+      <Row className="justify-content-center   ">
+        <Col xs="11" md="11" xl="5">
+          <div className=" p-5">
+            <p className="text-center"> Windows </p>
+            <br />
+            <ol>
+              <li>
+                {" "}
+                Go to the official Apache Maven download page <br />{" "}
+              </li>
+              <li>
+                {" "}
+                Download the binary zip archive (e.g.,
+                apache-maven-3.9.x-bin.zip) <br />
+              </li>
+              <li>
+                {" "}
+                Unzip the file to a folder, e.g., C:\Program Files\Apache\Maven{" "}
+                <br />
+              </li>
+              <li>
+                {" "}
+                Open System Properties → Advanced → Environment Variables <br />
+              </li>
+              <li>
+                Name:
+                <pre>
+                  <code>MAVEN_HOME</code>
+                </pre>
+                Value:
+                <pre>
+                  <code>C:\Program Files\Apache\Maven\apache-maven-3.9.x</code>
+                </pre>
+              </li>
+              <li>
+                Find the Path variable → click Edit → Add:
+                <pre>
+                  <code>%MAVEN_HOME%\bin</code>
+                </pre>
+              </li>
+              <li>
+                Verify Open Command Prompt and run:
+                <pre>
+                  <code>mvn -v</code>
+                </pre>
+              </li>
+            </ol>
+          </div>
+        </Col>
+        <Col xs="11" md="11" xl="5">
+          <div className=" p-5">
+            <p className="text-center"> macOS </p>
+            <ol>
+              <li>
+                Run
+                <pre>
+                  <code> brew install maven </code>
+                </pre>
+              </li>
+              <li>
+                Verify:
+                <pre>
+                  <code>mvn -v</code>{" "}
+                </pre>
+              </li>
+            </ol>
+          </div>
+
+          <div className=" p-5">
+            Linux
+            <br />
+            <ol>
+              <li>
+                Run:
+                <pre>
+                  <code>
+                    sudo apt update <br />
+                    sudo apt install maven
+                  </code>
+                </pre>
+              </li>
+              <li>
+                Then:
+                <pre>
+                  <code>mvn -v</code>
+                </pre>
+              </li>
+            </ol>
+          </div>
+        </Col>
+      </Row>
+
+      <Row className="justify-content-center mb-5 ">
+        <Col xs="11" md="11" className="mt-5 mb-5 cardItems2">
+          <h3> 3. IntelliJ </h3>
+
+          <Col xs="11" md="11" xl="11">
+            <div className=" p-5">
+              <ul>
+                <li>
+                  {" "}
+                  IntelliJ IDEA is a good IDE for Java Development, however, you
+                  can use any other IDE of your choice <br />{" "}
+                </li>
+                <li>
+                  Download and install IntelliJ IDEA from
+                  <Link></Link>
+                </li>
+              </ul>
+            </div>
+          </Col>
         </Col>
       </Row>
     </>
