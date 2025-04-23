@@ -33,11 +33,13 @@ function NavBar() {
               Creating an Application
               <li>
                 <Link to="/app" onClick={() => setVisible(false)}>
-                  Installing The Prerequisites
+                  Prerequisites
                 </Link>
               </li>
               <li>
-                <a href="#">Maven</a>
+                <Link to="/new-app" onClick={() => setVisible(false)}>
+                  Creating a Spring Boot Application
+                </Link>
               </li>
               <li>
                 <a href="#">Running and Debugging a Spring Boot Application</a>

@@ -2,12 +2,12 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function CreateApp() {
+function Prerequisites() {
   return (
     <>
       <Row className="justify-content-center ml-5">
         <Col xs="8" md="8" className="">
-          <h2>Creating A SpringBoot Application</h2>
+          <h2>SpringBoot Application</h2>
         </Col>
       </Row>
       <Row className="justify-content-center">
@@ -275,4 +275,4 @@ function CreateApp() {
   );
 }
 
-export default CreateApp;
+export default Prerequisites;
