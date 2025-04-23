@@ -12,12 +12,12 @@ function NewApp() {
       </Row>
       <Row className="justify-content-center">
         <Col xs="8" md="6" className="">
-          <h2>Creating A Spring Boot Applicaton Using Use Spring Initializr</h2>
+          <h2>Creating A Spring Boot Applicaton Using Spring Initializr</h2>
         </Col>
       </Row>
 
       <Row className="justify-content-center ">
-        <Col xs="8" md="8" className="cardItems3">
+        <Col xs="8" md="8" className="cardItems3 p-5">
           <ul>
             {" "}
             <h3>To create a Spring Boot Application:</h3>
@@ -89,11 +89,15 @@ function NewApp() {
           </ul>
           You have successfully run your your Spring Boot Application <br />
           At this step, You should have something close to this: <br />
-        </Col>
-      </Row>
-      <Row className="justify-content-center ">
-        <Col xs="11" md="8" className="">
-          <img src={intellij} alt="BootUp" width={1000} height={550} />
+          <Col xs="8" md="9">
+            <img
+              src={intellij}
+              alt="BootUp"
+              className="img-fluid rounded shadow-sm"
+            />
+          </Col>
+          Well done, you just created your first Spring Boot Application, end to
+          end.
         </Col>
       </Row>
     </div>
