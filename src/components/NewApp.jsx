@@ -43,7 +43,7 @@ function NewApp() {
                     <li>Spring Boot version: (e.g., 3.4.x)</li>
                     <li>Group: com.example</li>
                     <li>Artifact: hello-spring</li>
-                    <li>Dependencies: Spring Web</li>
+                    <li>Dependencies: Spring Web & Spring Boot Actuator</li>
                   </ul>
                 </code>
               </pre>
