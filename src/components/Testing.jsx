@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import postman from "../assets/postman.png";
 
 function Testing() {
   return (
@@ -28,20 +29,24 @@ function Testing() {
               To configure the Request, Select the Method <b>GET</b> and enter
               your url, For example:
               <pre>
-                <code>http://localhost:8080/</code>
+                <code>http://localhost:8080/actuator</code>
               </pre>
             </li>
-            <li>
-              (If you have other endpoints, e.g. /api/users, use those URLs.)
-            </li>
-
+            (If you have other endpoints, e.g. /api/users, use those URLs.)
             <li>Click Send.</li>
-            <li>In the Body panel you should see:</li>
-            <pre>
-              <code>Hello, Spring Boot!</code>
-            </pre>
-            <li>In the Status bar you should see 200 OK. As shown below</li>
+            <li>
+              If all is well, you should see a response body and a 200 OK In the
+              Status bar . Something like:
+            </li>
           </ul>
+        </Col>
+
+        <Col xs="8" md="8" className="m-5">
+          <img
+            src={postman}
+            alt="BootUp"
+            className="img-fluid rounded shadow-sm"
+          />
         </Col>
       </Row>
     </>

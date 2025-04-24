@@ -44,6 +44,16 @@ function NewApp() {
                     <li>Group: com.example</li>
                     <li>Artifact: hello-spring</li>
                     <li>Dependencies: Spring Web & Spring Boot Actuator</li>
+                    <li>
+                      Spring Web - gives your Spring Boot app web capabilities —
+                      think HTTP, REST APIs, and serving web pages.
+                    </li>
+                    <li>
+                      Boot Actuator - it's a health dashboard and diagnostics
+                      toolkit built right into your Spring Boot app. It helps
+                      you monitor and manage your application in production (or
+                      while testing).
+                    </li>
                   </ul>
                 </code>
               </pre>
