@@ -96,6 +96,9 @@ function NewApp() {
               className="img-fluid rounded shadow-sm"
             />
           </Col>
+          <br />
+          <br />
+          <br />
           Well done, you just created your first Spring Boot Application, end to
           end.
         </Col>

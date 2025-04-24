@@ -42,7 +42,9 @@ function NavBar() {
                 </Link>
               </li>
               <li>
-                <a href="#">Running and Debugging a Spring Boot Application</a>
+                <Link to="/testing" onClick={() => setVisible(false)}>
+                  Testing With Postman
+                </Link>
               </li>
             </ul>
             <br />
