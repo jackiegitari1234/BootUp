@@ -50,9 +50,9 @@ function NewApp() {
                     </li>
                     <li>
                       Boot Actuator - it's a health dashboard and diagnostics
-                      toolkit built right into your Spring Boot app. It helps
-                      you monitor and manage your application in production (or
-                      while testing).
+                      toolkit built right into your Spring Boot app. <br /> It
+                      helps you monitor and manage your application in
+                      production (or while testing).
                     </li>
                   </ul>
                 </code>

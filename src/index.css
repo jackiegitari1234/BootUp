@@ -274,3 +274,7 @@ pre code {
   font-family: "Courier New", monospace;
   font-size: 0.95rem;
 }
+
+.header {
+  font-size: 1.8rem;
+}

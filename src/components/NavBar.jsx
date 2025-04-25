@@ -46,6 +46,11 @@ function NavBar() {
                   Testing With Postman
                 </Link>
               </li>
+              <li>
+                <Link to="/sequence" onClick={() => setVisible(false)}>
+                  Startup Sequence of a Spring Boot App
+                </Link>
+              </li>
             </ul>
             <br />
             <ul className="list">

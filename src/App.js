@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import { Route, Routes } from "react-router-dom";
 import NewApp from "./components/NewApp";
 import Testing from "./components/Testing";
+import Sequence from "./components/Sequence";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/app" element={<Prerequisites />} />
           <Route path="/new-app" element={<NewApp />} />
           <Route path="/testing" element={<Testing />} />
+          <Route path="/sequence" element={<Sequence />} />
         </Routes>
       </main>
 
