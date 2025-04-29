@@ -16,7 +16,7 @@ function Sequence() {
       </Row>
 
       <Row className="justify-content-center ">
-        <Col xs="8" md="8" className="cardItems3 p-5">
+        <Col xs="8" md="8" className="cardItem p-5">
           When you run a Spring Boot Application, alot happens behind the scene.{" "}
           <br />
           This is because of spring boot's Auto-Configuration. <br /> <br />

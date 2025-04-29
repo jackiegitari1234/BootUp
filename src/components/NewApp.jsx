@@ -17,7 +17,7 @@ function NewApp() {
       </Row>
 
       <Row className="justify-content-center ">
-        <Col xs="8" md="8" className="cardItems3 p-5">
+        <Col xs="8" md="8" className="cardItem p-5">
           <ul>
             {" "}
             <h3>To create a Spring Boot Application:</h3>

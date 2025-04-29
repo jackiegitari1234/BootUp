@@ -10,8 +10,8 @@ function Testing() {
           <h2>SpringBoot Application</h2>
         </Col>
       </Row>
-      <Row className="justify-content-center ml-5">
-        <Col xs="8" md="8">
+      <Row className="justify-content-center ml-5 ">
+        <Col xs="8" md="8" className="cardItem">
           <ul>
             <h2>To test your Spring Boot Application:</h2>
             <li>
@@ -39,14 +39,14 @@ function Testing() {
               Status bar . Something like:
             </li>
           </ul>
-        </Col>
 
-        <Col xs="8" md="8" className="m-5">
-          <img
-            src={postman}
-            alt="BootUp"
-            className="img-fluid rounded shadow-sm"
-          />
+          <Col xs="8" md="8" className="m-5">
+            <img
+              src={postman}
+              alt="BootUp"
+              className="img-fluid rounded shadow-sm"
+            />
+          </Col>
         </Col>
       </Row>
     </>

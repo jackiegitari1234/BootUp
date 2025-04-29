@@ -10,6 +10,7 @@ main {
 }
 * {
   box-sizing: border-box;
+  color: #d3cfcf;
 }
 body {
   align-items: center;
@@ -38,7 +39,6 @@ h3 {
   font-size: 20px;
   text-align: center;
   margin: 20px;
-  color: white;
 }
 
 .text {
@@ -48,14 +48,14 @@ h3 {
 .navHeader {
   text-transform: capitalize;
   text-decoration: none;
-  color: #1e1e1e;
+  color: #1e1e1e !important;
   font-size: 20px;
 }
 
 .navItem {
   text-transform: capitalize;
   text-decoration: none;
-  color: #1e1e1e;
+  color: #1e1e1e !important;
   font-size: 16px;
 }
 
@@ -185,7 +185,7 @@ h3 {
 }
 
 header {
-  color: white;
+  /* color: white; */
   font-size: 130%;
   position: relative;
   padding: 13px 15px;
@@ -199,7 +199,7 @@ header {
 
 header h1 {
   margin: 0;
-  color: white;
+  /* color: white; */
 }
 
 p {
@@ -245,8 +245,22 @@ button {
   background: rgb(17, 17, 17);
   border-radius: 12px;
   box-shadow: 0 0 5px var(--secondary-color);
-  color: aliceblue;
+  /* color: #d3cfcf; */
   font-size: 15px;
+}
+.cardItem {
+  padding: 20px;
+  margin: 10px;
+  margin-bottom: 40px;
+  background: rgb(17, 17, 17);
+  border-radius: 12px;
+  box-shadow: 0 0 5px var(--secondary-color);
+  /* color: #d3cfcf; */
+  font-size: 15px;
+}
+
+.nav .navHeader li a:hover {
+  text-decoration: underline;
 }
 
 .cardItems3 {
@@ -256,7 +270,7 @@ button {
   background: black;
   border-radius: 12px;
   box-shadow: 5px 5px 5px 5px rgb(51, 51, 51);
-  color: rgb(194, 198, 201);
+
   font-size: 20px;
 }
 
@@ -267,7 +281,7 @@ button {
   background: black;
   border-radius: 12px;
   box-shadow: 5px 5px 5px 5px rgb(51, 51, 51);
-  color: aliceblue;
+
   font-size: 15px;
 }
 .cardItems:hover {
@@ -280,7 +294,6 @@ button {
 
 pre code {
   background-color: #1e1e1e; /* Dark gray background */
-  color: #d4d4d4; /* Light gray text */
   padding: 1em;
   border-radius: 8px;
   display: block;
