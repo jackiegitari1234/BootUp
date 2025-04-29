@@ -52,17 +52,29 @@ function NavBar() {
                 </Link>
               </li>
             </ul>
-            <br />
-            <ul className="list">
-              <a href="#" className="list">
-                Microservices Architecture
-              </a>
-            </ul>
-            <ul className="list">
-              <a href="#" className="list">
-                Spring Boot and Databases
-              </a>
-            </ul>
+
+            <ol className="navHeader">
+              {" "}
+              Topics you Can Never Miss: <br />
+              <li>
+                <Link
+                  className="navItem"
+                  to="/filters"
+                  onClick={() => setVisible(false)}
+                >
+                  WebFilters in Spring WebFlux
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="navItem"
+                  to="/filters"
+                  onClick={() => setVisible(false)}
+                >
+                  WebFilters in Spring WebFlux
+                </Link>
+              </li>
+            </ol>
           </div>
         </div>
       </div>

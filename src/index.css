@@ -45,6 +45,20 @@ h3 {
   text-transform: capitalize;
 }
 
+.navHeader {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #1e1e1e;
+  font-size: 20px;
+}
+
+.navItem {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #1e1e1e;
+  font-size: 16px;
+}
+
 .text-center {
   text-align: center !important;
 }

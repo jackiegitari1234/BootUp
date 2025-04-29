@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import NewApp from "./components/NewApp";
 import Testing from "./components/Testing";
 import Sequence from "./components/Sequence";
+import Filters from "./components/Filters";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/new-app" element={<NewApp />} />
           <Route path="/testing" element={<Testing />} />
           <Route path="/sequence" element={<Sequence />} />
+          <Route path="/filters" element={<Filters />} />
         </Routes>
       </main>
 
