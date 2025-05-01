@@ -93,10 +93,10 @@ public class UserDataWebFilter implements WebFilter {
             {" "}
             <code>
               {`
-public Mono<WsResponse> addChapter(AddChapterRequest request) {
+public Mono<WsResponse> saveEntity(Request request) {
     return Mono.deferContextual(ctx -> {
         UserData user = ctx.get("userData");
-        return saveChapter(request, user);
+        return saveEntity(request, user);
     });
 }
             `}
@@ -105,6 +105,7 @@ public Mono<WsResponse> addChapter(AddChapterRequest request) {
           <br />
           This keeps your service methods clean — no need to pass
           ServerWebExchange or headers manually.
+          <br />
           <br />
           <ul>
             {" "}
