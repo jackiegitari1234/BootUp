@@ -19,11 +19,11 @@ function Sequence() {
         <Col xs="8" md="8" className="cardItem p-5">
           When you run a Spring Boot Application, alot happens behind the scene.{" "}
           <br />
-          This is because of spring boot's Auto-Configuration. <br /> <br />
-          You don’t need to worry about all the internal mechanics — that’s the
-          beauty of high-levels of <strong>abstraction</strong>. Still, it’s
-          always a good idea to take a peek under the hood, even if you don’t
-          master every technical detail.
+          This is because of spring boot's Auto-Configuration. You don’t need to
+          worry about all the internal mechanics — that’s the beauty of
+          high-levels of <strong>abstraction</strong>.<br />
+          <br /> Still, it’s always a good idea to take a peek under the hood,
+          even if you don’t master every technical detail.
           <br />
           <br />
           <div className="header">
@@ -34,8 +34,9 @@ function Sequence() {
               SpringApplication.run() is called.
               <ul>
                 This single line of code kicks off the entire Spring Boot
-                application lifecycle. Here's what SpringApplication.run() does
-                behind the scenes:
+                application lifecycle.
+                <br /> Here's what SpringApplication.run() does behind the
+                scenes:
                 <li>
                   Creates a SpringApplication instance - It prepares the Spring
                   Boot application by setting up:
@@ -56,11 +57,12 @@ function Sequence() {
             </li>
 
             <li>
-              Environment is prepared (application.properties/yml loaded).
+              Environment is prepared (application.properties/yml loaded).{" "}
+              <br />
+              Spring Boot looks for application.properties (or .yml) in a
+              specific order of locations. From highest to lowest precedence:
               <ol>
                 {" "}
-                Spring Boot looks for application.properties (or .yml) in a
-                specific order of locations. From highest to lowest precedence:
                 <li>
                   application.properties in /config subdirectory of the current
                   directory.
@@ -69,8 +71,8 @@ function Sequence() {
                 <li>application.properties in a classpath /config package.</li>
                 <li>application.properties in the classpath root.</li>
               </ol>
+              Once found, Spring Boot:
               <ul>
-                Once found, Spring Boot:
                 <li>Loads the file using PropertiesPropertySourceLoader.</li>
                 <li>Parses it into key-value pairs.</li>
                 <li>
