@@ -51,7 +51,8 @@ function Sequence() {
             <li>
               ApplicationContext is created and initialized. <br />
               Spring Boot creates an ApplicationContext, which is like the
-              container that holds all your beans (components, services, etc.)
+              container that holds all your beans (components, services, etc.){" "}
+              <br /> <br />
             </li>
 
             <li>
@@ -81,7 +82,7 @@ function Sequence() {
                     <li>Fields annotated with @Value.</li>
                     <li>
                       Spring Boot's built-in configuration classes (e.g.
-                      server.port).
+                      server.port). <br /> <br />
                     </li>
                   </ul>
                 </li>
@@ -96,7 +97,8 @@ function Sequence() {
               <br />
               Thanks to @EnableAutoConfiguration, Spring Boot uses
               spring.factories to load many pre-built configurations based on
-              what’s on the classpath (e.g. DataSource, WebMvc, Security).
+              what’s on the classpath (e.g. DataSource, WebMvc, Security).{" "}
+              <br /> <br />
             </li>
             <li>
               Beans are registered and wired into the application context.
