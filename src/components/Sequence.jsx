@@ -21,18 +21,91 @@ function Sequence() {
           <br />
           This is because of spring boot's Auto-Configuration. <br /> <br />
           You don’t need to worry about all the internal mechanics — that’s the
-          beauty of high-level abstraction. Still, it’s always a good idea to
-          take a peek under the hood, even if you don’t master every technical
-          detail You really don't have to worry about this, that's why there is
-          this high level of abstraction, but it's always wise to have a peek
-          without necessarirlly mastering the technicallity of it.
+          beauty of high-levels of <strong>abstraction</strong>. Still, it’s
+          always a good idea to take a peek under the hood, even if you don’t
+          master every technical detail.
           <br />
           <br />
           <div className="header">
             Spring Boot Runtime Bootstrapping - The Startup Process
           </div>
           <ol>
-            <li></li>
+            <li>
+              SpringApplication.run() is called.
+              <ul>
+                This single line of code kicks off the entire Spring Boot
+                application lifecycle. Here's what SpringApplication.run() does
+                behind the scenes:
+                <li>
+                  Creates a SpringApplication instance - It prepares the Spring
+                  Boot application by setting up:
+                  <ul>
+                    <li>The type of application (e.g. web, reactive, CLI).</li>
+                    <li>Default settings.</li>
+                    <li>Listeners and initializers.</li>
+                    <li>Banner printing.</li> <br />
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              ApplicationContext is created and initialized. <br />
+              Spring Boot creates an ApplicationContext, which is like the
+              container that holds all your beans (components, services, etc.)
+            </li>
+
+            <li>
+              Environment is prepared (application.properties/yml loaded).
+              <ol>
+                {" "}
+                Spring Boot looks for application.properties (or .yml) in a
+                specific order of locations. From highest to lowest precedence:
+                <li>
+                  application.properties in /config subdirectory of the current
+                  directory.
+                </li>
+                <li>application.properties in the current directory.</li>
+                <li>application.properties in a classpath /config package.</li>
+                <li>application.properties in the classpath root.</li>
+              </ol>
+              <ul>
+                Once found, Spring Boot:
+                <li>Loads the file using PropertiesPropertySourceLoader.</li>
+                <li>Parses it into key-value pairs.</li>
+                <li>
+                  Binds those pairs to:
+                  <ul>
+                    <li>
+                      Spring beans annotated with @ConfigurationProperties.
+                    </li>
+                    <li>Fields annotated with @Value.</li>
+                    <li>
+                      Spring Boot's built-in configuration classes (e.g.
+                      server.port).
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              ClassPath scanning finds your @Component, @Service, @Controller,
+              etc.
+            </li>
+            <li>
+              Auto-configuration kicks in (magic via @EnableAutoConfiguration).{" "}
+              <br />
+              Thanks to @EnableAutoConfiguration, Spring Boot uses
+              spring.factories to load many pre-built configurations based on
+              what’s on the classpath (e.g. DataSource, WebMvc, Security).
+            </li>
+            <li>
+              Beans are registered and wired into the application context.
+            </li>
+            <li>
+              An embedded server (like Tomcat/Jetty/Undertow) is started if it’s
+              a web app.
+            </li>
+            <li>ApplicationRunner / CommandLineRunner beans are executed.</li>
           </ol>
         </Col>
       </Row>
