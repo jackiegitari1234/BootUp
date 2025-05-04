@@ -34,6 +34,16 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  font-size: 17px;
+  margin: 0;
+  color: #1e1e1e !important;
+  font-weight: 400 !important;
+  margin-bottom: 0% !important;
+  text-transform: capitalize;
+  margin-left: 0%;
+}
+
 .intro {
   font-size: 20px;
   text-align: center;
@@ -48,14 +58,8 @@ h3 {
   text-transform: capitalize;
   text-decoration: none;
   color: #1e1e1e !important;
-  font-size: 20px;
-}
-
-.navItem {
-  text-transform: capitalize;
-  text-decoration: none;
-  color: #1e1e1e !important;
-  font-size: 16px;
+  font-size: 1.5em;
+  padding-left: 20px;
 }
 
 .text-center {
@@ -144,8 +148,12 @@ h3 {
   padding: 0;
 }
 
+.list {
+  margin-bottom: 60px;
+}
+
 .nav .list li {
-  margin: 20px 0;
+  margin: 3px 0;
 }
 
 .nav .list li a {
@@ -312,4 +320,7 @@ pre code {
 
 .header {
   font-size: 1.8rem;
+}
+.lastClass {
+  margin-bottom: 300px;
 }

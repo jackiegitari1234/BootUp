@@ -30,7 +30,7 @@ function NavBar() {
 
           <div>
             <ul className="list">
-              Creating an Application
+              <h4> Creating an Application</h4>
               <li>
                 <Link to="/app" onClick={() => setVisible(false)}>
                   Prerequisites
@@ -52,29 +52,27 @@ function NavBar() {
                 </Link>
               </li>
             </ul>
-
-            <ol className="navHeader">
-              {" "}
-              Topics you Can Never Miss: <br />
-              <li>
+            <h4>Topics you Can Never Miss:</h4>{" "}
+            <ul className="list lastClass ">
+              <li className="">
                 <Link
-                  className="navItem"
+                  className=""
                   to="/filters"
                   onClick={() => setVisible(false)}
                 >
                   WebFilters in Spring WebFlux
                 </Link>
               </li>
-              <li>
+              <li className="">
                 <Link
-                  className="navItem"
+                  className=""
                   to="/threads"
                   onClick={() => setVisible(false)}
                 >
                   Virtual Threads
                 </Link>
               </li>
-            </ol>
+            </ul>
           </div>
         </div>
       </div>
