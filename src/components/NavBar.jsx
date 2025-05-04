@@ -68,10 +68,10 @@ function NavBar() {
               <li>
                 <Link
                   className="navItem"
-                  to="/filters"
+                  to="/threads"
                   onClick={() => setVisible(false)}
                 >
-                  WebFilters in Spring WebFlux
+                  Virtual Threads
                 </Link>
               </li>
             </ol>
