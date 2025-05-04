@@ -7,6 +7,7 @@ import NewApp from "./components/NewApp";
 import Testing from "./components/Testing";
 import Sequence from "./components/Sequence";
 import Filters from "./components/Filters";
+import Threads from "./components/Threads";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/testing" element={<Testing />} />
           <Route path="/sequence" element={<Sequence />} />
           <Route path="/filters" element={<Filters />} />
+          <Route path="/threads" element={<Threads />} />
         </Routes>
       </main>
 
