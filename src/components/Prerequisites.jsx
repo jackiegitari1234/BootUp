@@ -5,11 +5,6 @@ import { Link } from "react-router-dom";
 function Prerequisites() {
   return (
     <>
-      <Row className="justify-content-center ml-5">
-        <Col xs="8" md="8" className="">
-          <h2>SpringBoot Application</h2>
-        </Col>
-      </Row>
       <Row className="justify-content-center">
         <Col xs="8" md="4" className="">
           <h2>Prerequisites</h2>

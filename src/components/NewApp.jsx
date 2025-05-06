@@ -5,11 +5,6 @@ import intellij from "../assets/intellij.png";
 function NewApp() {
   return (
     <div>
-      <Row className="justify-content-center ml-5">
-        <Col xs="8" md="8" className="">
-          <h2>SpringBoot Application</h2>
-        </Col>
-      </Row>
       <Row className="justify-content-center">
         <Col xs="8" md="6" className="">
           <h2>Creating A Spring Boot Applicaton Using Spring Initializr</h2>
@@ -17,7 +12,7 @@ function NewApp() {
       </Row>
 
       <Row className="justify-content-center ">
-        <Col xs="8" md="8" className="cardItem p-5">
+        <Col xs="11" md="8" className="cardItem ">
           <ul>
             {" "}
             <h3>To create a Spring Boot Application:</h3>
@@ -99,7 +94,7 @@ function NewApp() {
           </ul>
           You have successfully run your your Spring Boot Application <br />
           At this step, You should have something close to this: <br />
-          <Col xs="8" md="9">
+          <Col xs="11" md="9">
             <img
               src={intellij}
               alt="BootUp"
