@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import logo from "../assets/123.png";
 import { Link } from "react-router-dom";
+import { Col, Row } from "react-bootstrap";
 
 function NavBar() {
   const [visible, setVisible] = useState(false);
@@ -72,10 +73,24 @@ function NavBar() {
                   Virtual Threads
                 </Link>
               </li>
+              <li className="">
+                <Link
+                  className=""
+                  to="/actuator"
+                  onClick={() => setVisible(false)}
+                >
+                  Spring Boot Actuator - Dependency
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
       </div>
+      <Row className="justify-content-center ml-5">
+        <Col xs="8" md="8" className="">
+          <h2>SpringBoot Application</h2>
+        </Col>
+      </Row>
     </>
   );
 }

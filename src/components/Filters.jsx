@@ -1,17 +1,25 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 
 function Filters() {
   return (
     <div>
-      <Row className="justify-content-center ml-5">
-        <Col xs="8" md="8" className="">
+      <Helmet>
+        <title>Java WebFilters</title>
+        <meta
+          name="description"
+          content="WebFilters in Spring WebFlux Explained"
+        />
+      </Helmet>
+      <Row className="justify-content-center">
+        <Col xs="12" md="8" className="ml-3">
           <h2>WebFilters in Spring WebFlux</h2>
         </Col>
       </Row>
 
-      <Row className="justify-content-center ">
-        <Col xs="8" md="8" className="cardItem p-5">
+      <Row className="justify-content-center m-1 ">
+        <Col xs="11" md="8" className="cardItem p-2 ">
           What Is a WebFilter? <br />A WebFilter in Spring WebFlux is a reactive
           equivalent of the traditional servlet filter. It lets you intercept
           every HTTP request and response flowing through your application.{" "}

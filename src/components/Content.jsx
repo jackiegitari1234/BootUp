@@ -1,10 +1,18 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Container } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 
 function Content() {
   return (
     <>
+      <Helmet>
+        <title>SpringBoot Introduction</title>
+        <meta
+          name="description"
+          content="An Intro to spring boot Applications"
+        />
+      </Helmet>
       <Container>
         <h2>SpringBoot Intro</h2>
         <Row>
