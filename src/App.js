@@ -9,6 +9,7 @@ import Sequence from "./components/Sequence";
 import Filters from "./components/Filters";
 import Threads from "./components/Threads";
 import usePageTracking from "./hooks/usePageTracking";
+import Actuator from "./components/Actuator";
 
 function App() {
   usePageTracking();
@@ -25,6 +26,7 @@ function App() {
           <Route path="/sequence" element={<Sequence />} />
           <Route path="/filters" element={<Filters />} />
           <Route path="/threads" element={<Threads />} />
+          <Route path="/actuator" element={<Actuator />} />
         </Routes>
       </main>
 

@@ -1,25 +1,20 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import startup from "../assets/startup.png";
+import startup from "../assets/startup-img.png";
 
 function Sequence() {
   return (
     <div>
-      <Row className="justify-content-center ml-5">
-        <Col xs="8" md="8" className="">
-          <h2>SpringBoot Application</h2>
-        </Col>
-      </Row>
       <Row className="justify-content-center">
         <Col xs="8" md="6" className="">
           <h2>Startup Sequence of a Spring Boot App</h2>
         </Col>
       </Row>
 
-      <Row className="justify-content-center cardItem m-5 ">
-        <Col xs="12" md="12" className=" p-3">
-          <Row>
-            <Col xs="8" md="6">
+      <Row className="justify-content-center  m-1 ">
+        <Col xs="12" md="9" className="justify-content-center">
+          <Row className="cardItem2 justify-content-center p-1">
+            <Col xs="12" md="9">
               When you run a Spring Boot Application, alot happens behind the
               scene. <br />
               This is because of spring boot's Auto-Configuration. You don’t
@@ -124,7 +119,7 @@ function Sequence() {
                 </li>
               </ol>
             </Col>
-            <Col xs="8" md="6">
+            <Col xs="8" md="3">
               <img
                 src={startup}
                 alt="BootUp"
@@ -133,7 +128,6 @@ function Sequence() {
             </Col>
           </Row>
         </Col>
-        <Col></Col>
       </Row>
     </div>
   );
