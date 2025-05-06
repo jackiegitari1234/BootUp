@@ -1,22 +1,24 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 
 function Threads() {
   return (
     <div>
-      <Row className="justify-content-center ml-5">
-        <Col xs="8" md="8" className="">
-          <h2>SpringBoot Application</h2>
+      <Helmet>
+        <title>Java Threads</title>
+        <meta
+          name="description"
+          content="Java Threads Explained | Platform And Virtual Threads"
+        />
+      </Helmet>
+      <Row className="justify-content-center">
+        <Col xs="8" md="6" className="">
+          <h2>Java Threads</h2>
         </Col>
       </Row>
-
-      <Row className="justify-content-center  m-5 cardItem">
-        <Row className="justify-content-center">
-          <Col xs="12" md="6" className="">
-            <h2>Java Threads</h2>
-          </Col>
-        </Row>
-        <Col xs="8" md="12 " className="">
+      <Row className="justify-content-center  m-3">
+        <Col xs="11" md="10" className="cardItem">
           <p>
             In programming, a thread is the smallest unit of execution within a
             process. Think of a thread as a lightweight worker that carries out
