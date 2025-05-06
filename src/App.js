@@ -8,8 +8,10 @@ import Testing from "./components/Testing";
 import Sequence from "./components/Sequence";
 import Filters from "./components/Filters";
 import Threads from "./components/Threads";
+import usePageTracking from "./hooks/usePageTracking";
 
 function App() {
+  usePageTracking();
   return (
     <div className="App">
       <NavBar />
