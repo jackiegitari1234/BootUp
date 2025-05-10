@@ -28,7 +28,7 @@ function Actuator() {
           new dependency—no magic, no fuss. <br /> <br />
         </Col>
       </Row>
-      <Row className="justify-content-left  m-5  cardItem">
+      <Row className="justify-content-left m-3  cardItem">
         <Col xs="11" md="7" className=" ">
           Gradle <br />
           <pre>
@@ -56,7 +56,7 @@ function Actuator() {
           />
         </Col>
         <br /> <br />
-        <Col xs="11" md="7" className="mt-5justify-content-left">
+        <Col xs="12" md="7" className="mt-5justify-content-left">
           By default, only a few endpoints like /actuator/health and
           /actuator/info are enabled for security reasons. You can customize
           what gets exposed in your application.properties:
