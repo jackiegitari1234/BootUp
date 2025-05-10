@@ -82,6 +82,15 @@ function NavBar() {
                   Spring Boot Actuator - Dependency
                 </Link>
               </li>
+              <li className="">
+                <Link
+                  className=""
+                  to="/spring-security"
+                  onClick={() => setVisible(false)}
+                >
+                  Spring Security
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
