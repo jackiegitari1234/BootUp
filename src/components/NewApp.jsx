@@ -40,7 +40,7 @@ function NewApp() {
                     <li>Artifact: hello-spring</li>
                     <li>Dependencies: Spring Web & Spring Boot Actuator</li>
                     <li>
-                      Spring Web - gives your Spring Boot app web capabilities —
+                      Spring Web - gives your Spring Boot app web capabilities,
                       think HTTP, REST APIs, and serving web pages.
                     </li>
                     <li>
@@ -68,7 +68,7 @@ function NewApp() {
                   select it.
                   <br />
                   Wait for IntelliJ to Index <br />
-                  You may see prompts like "Import Maven Project" — click "Yes".{" "}
+                  You may see prompts like "Import Maven Project", click "Yes".{" "}
                   <br />
                   IntelliJ should automatically download and resolve
                   dependencies. <br />

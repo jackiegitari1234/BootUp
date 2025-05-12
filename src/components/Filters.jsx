@@ -51,7 +51,7 @@ public class LoggingWebFilter implements WebFilter {
           Use Case: Injecting Authenticated User into Reactor Context <br />
           Imagine an API where every POST or PATCH request must be
           authenticated, and you want the user data available in the service
-          layer — without manually passing headers around. <br />
+          layer, without manually passing headers around. <br />
           Step 1: Fetch user data with WebClient <br />
           <pre>
             <code>
@@ -111,14 +111,14 @@ public Mono<WsResponse> saveEntity(Request request) {
             </code>
           </pre>{" "}
           <br />
-          This keeps your service methods clean — no need to pass
+          This keeps your service methods clean, no need to pass
           ServerWebExchange or headers manually.
           <br />
           <br />
           <ul>
             {" "}
             Best Practices
-            <li>Avoid heavy logic in WebFilters — keep it non-blocking. </li>
+            <li>Avoid heavy logic in WebFilters, keep it non-blocking. </li>
             <li>
               Use Reactor Context instead of exchange.getAttributes() when
               possible.{" "}
