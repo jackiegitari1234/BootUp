@@ -113,7 +113,7 @@ function Content() {
             Before Spring Boot, setting up a Spring application could be
             tedious:
             <br /> XML files everywhere, manual dependency management, servlet
-            container deployment—you name it.
+            container deployment, you name it.
             <ul>
               <li>Speeds up development</li>
               <li>Improving productivity</li>

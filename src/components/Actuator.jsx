@@ -14,18 +14,18 @@ function Actuator() {
         <Col xs="12" md="10" className="justify-content-center">
           Spring Boot makes building applications fast and easy, but what
           happens after your app goes live? That’s where Actuator steps in. It
-          opens a window into your app’s health, metrics, environment, and
-          more—all with just a few lines of configuration. It helps you monitor,
+          opens a window into your app’s health, metrics, environment, and more,
+          all with just a few lines of configuration. It helps you monitor,
           analyze, and even diagnose problems before users notice anything is
           wrong.
           <br />
-          Spring Boot Actuator works seamlessly with your existing
-          application—no need to modify your main logic. It's like having a
-          dashboard built right into your backend.
+          Spring Boot Actuator works seamlessly with your existing application,
+          no need to modify your main logic. It's like having a dashboard built
+          right into your backend.
           <br />
           <br />
           Adding Spring Boot Actuator to your project is as simple as adding a
-          new dependency—no magic, no fuss. <br /> <br />
+          new dependency, no magic, no fuss. <br /> <br />
         </Col>
       </Row>
       <Row className="justify-content-left m-3  cardItem">
