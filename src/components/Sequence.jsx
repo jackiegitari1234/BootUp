@@ -18,7 +18,7 @@ function Sequence() {
               When you run a Spring Boot Application, alot happens behind the
               scene. <br />
               This is because of spring boot's Auto-Configuration. You don’t
-              need to worry about all the internal mechanics — that’s the beauty
+              need to worry about all the internal mechanics, that’s the beauty
               of high-levels of <strong>abstraction</strong>.<br />
               <br /> Still, it’s always a good idea to take a peek under the
               hood, even if you don’t master every technical detail.

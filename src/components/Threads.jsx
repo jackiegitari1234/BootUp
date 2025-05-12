@@ -23,17 +23,17 @@ function Threads() {
             In programming, a thread is the smallest unit of execution within a
             process. Think of a thread as a lightweight worker that carries out
             tasks on behalf of your program. If a process is a factory, then
-            threads are the workers on the assembly line — each one can perform
+            threads are the workers on the assembly line, each one can perform
             tasks independently, sometimes even simultaneously. <br /> <br />
             Most applications today use multithreading to perform multiple
             operations at the same time. For example, a web server might use one
             thread to handle a request, another to read from the database, and
-            another to send the response back to the user — all without waiting
+            another to send the response back to the user, all without waiting
             for one task to finish before starting the next. <br />
             <br />
             Java traditionally uses platform threads, which are tightly tied to
             operating system threads. While powerful, they come with limitations
-            — especially when it comes to scalability. Creating and managing
+            especially when it comes to scalability. Creating and managing
             thousands of platform threads can become inefficient, leading to
             problems like high memory usage or thread contention.
             <br />
@@ -55,7 +55,7 @@ function Threads() {
               <li>
                 Virtual Threads <br />
                 Virtual threads, introduced in Java 21 (previewed in Java 19 and
-                20), are lightweight threads that the JVM schedules internally —
+                20), are lightweight threads that the JVM schedules internally,
                 not the OS. They allow developers to write concurrent code using
                 the same thread-per-task style, but with drastically better
                 scalability. <br />
