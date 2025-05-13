@@ -88,7 +88,7 @@ function NavBar() {
                   to="/spring-security"
                   onClick={() => setVisible(false)}
                 >
-                  Spring Security
+                  Spring Security - Basic Authentication
                 </Link>
               </li>
             </ul>

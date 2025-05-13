@@ -84,9 +84,114 @@ function SpringSecurity() {
           </ul>
           <p>
             {" "}
-            in Spring Boot 3+ (Spring Security 6+), all endpoints are unsecured.
-            You need to configure an authentication mechanism
+            In Spring Boot 3+ (Spring Security 6+), all endpoints are unsecured.
+            You need to configure an authentication mechanism. by adding this
+            configuration file in your project
+            <Col xs="11" md="7" className="ml-3">
+              <pre>
+                <code>
+                  {`import org.springframework.context.annotation.Bean;
+import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.config.Customizer;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class SecurityConfig {
+
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        http.authorizeHttpRequests(auth -> auth
+                        .anyRequest()
+                        .authenticated())
+                .httpBasic(Customizer.withDefaults());
+        return http.build();
+    }
+}
+`}
+                </code>
+              </pre>
+            </Col>
           </p>
+          <p>Step 2: Configure Basic Auth</p>
+          <p>
+            Here, we set up user credentials that will authenticate requests
+            received by our Application
+          </p>
+          <Col xs="11" md="7" className="ml-3">
+            <pre>
+              <code>
+                {`import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
+@Configuration
+public class UserConfig {
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
+    @Bean
+    public UserDetailsService user() {
+        return new InMemoryUserDetailsManager(
+                User.withUsername("user")
+                        .roles("USER")
+                        .password(passwordEncoder().encode("password"))
+                        .build()
+        );
+    }
+}`}
+              </code>
+            </pre>
+          </Col>
+          <p>
+            Noww, all your APIs are well protected. If you open postman and make
+            a request to the application without a basic Auth, or with invalid
+            credentials (find the valid crdentials in the code snippet above),
+            You will get an error code 401:Unauthorized{" "}
+          </p>
+          <p>Feel free to modify the username & password above</p>
+          <br />
+          Step3: Exclude Public URLs
+          <p>
+            To exclude public URLs from basic authorization, add the code{" "}
+            <code> .requestMatchers("/api/**").permitAll</code> to the
+            SecurityConfig class. The SecurityConfig configuration class should
+            then look like:
+          </p>
+          <Col xs="11" md="7" className="ml-3">
+            <pre>
+              <code>
+                {`import org.springframework.context.annotation.Bean;
+import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.config.Customizer;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class SecurityConfig {
+
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        http.authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/api/**").permitAll
+                        .anyRequest()
+                        .authenticated())
+                .httpBasic(Customizer.withDefaults());
+        return http.build();
+    }
+}
+`}
+              </code>
+            </pre>
+          </Col>
+          <p>Endpoints prefixed by /api/ should work without basic Auth</p>
         </Col>
       </Row>
     </div>
