@@ -82,6 +82,16 @@ function NavBar() {
                   Spring Boot Actuator - Dependency
                 </Link>
               </li>
+
+              <li className="">
+                <Link
+                  className=""
+                  to="/maven-pom"
+                  onClick={() => setVisible(false)}
+                >
+                  POM.XML & Dependency Management
+                </Link>
+              </li>
               <li className="">
                 <Link
                   className=""
