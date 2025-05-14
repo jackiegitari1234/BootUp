@@ -11,6 +11,7 @@ import Threads from "./components/Threads";
 import usePageTracking from "./hooks/usePageTracking";
 import Actuator from "./components/Actuator";
 import SpringSecurity from "./components/SpringSecurity";
+import MavenPom from "./components/MavenPom";
 
 function App() {
   usePageTracking();
@@ -29,6 +30,7 @@ function App() {
           <Route path="/threads" element={<Threads />} />
           <Route path="/actuator" element={<Actuator />} />
           <Route path="/spring-security" element={<SpringSecurity />} />
+          <Route path="/maven-pom" element={<MavenPom />} />
         </Routes>
       </main>
 
